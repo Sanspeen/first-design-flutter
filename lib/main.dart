@@ -116,6 +116,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 ],
               ),
             ]),
+            SizedBox(height: 35),
+            Container(
+                width: 320,
+                height: 250,
+                child: const Text(
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquet, ante ut fringilla feugiat, tortor lacus blandit libero, at malesuada libero ex vel lacus. Praesent viverra et metus id molestie.")),
           ],
         ),
       ),
