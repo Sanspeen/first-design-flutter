@@ -57,7 +57,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   Text("Oeschinen Lake Campground"),
-                  Text("Kandersteg, Switzerland", style: TextStyle(color: Color.fromARGB(255, 167, 167, 167)),)
+                  Text(
+                    "Kandersteg, Switzerland",
+                    style: TextStyle(color: Color.fromARGB(255, 167, 167, 167)),
+                  )
                 ],
               ),
               SizedBox(width: 85),
@@ -70,6 +73,48 @@ class _MyHomePageState extends State<MyHomePage> {
                   Text("41"),
                 ],
               )
+            ]),
+            SizedBox(height: 35),
+            const Row(children: <Widget>[
+              SizedBox(width: 55),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: <Widget>[
+                  Icon(
+                    Icons.star,
+                    color: Color.fromARGB(255, 28, 167, 248),
+                  ),
+                  Text("CALL",
+                      style:
+                          TextStyle(color: Color.fromARGB(255, 28, 167, 248))),
+                ],
+              ),
+              SizedBox(width: 60),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: <Widget>[
+                  Icon(
+                    Icons.star,
+                    color: Color.fromARGB(255, 28, 167, 248),
+                  ),
+                  Text("ROUTE",
+                      style:
+                          TextStyle(color: Color.fromARGB(255, 28, 167, 248))),
+                ],
+              ),
+              SizedBox(width: 60),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: <Widget>[
+                  Icon(
+                    Icons.share,
+                    color: Color.fromARGB(255, 28, 167, 248),
+                  ),
+                  Text("SHARE",
+                      style:
+                          TextStyle(color: Color.fromARGB(255, 28, 167, 248))),
+                ],
+              ),
             ]),
           ],
         ),
