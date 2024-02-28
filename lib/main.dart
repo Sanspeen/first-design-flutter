@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 void main() {
   runApp(const MyApp());
@@ -48,6 +50,27 @@ class _MyHomePageState extends State<MyHomePage> {
                       'https://www.ecoportal.net/wp-content/uploads/2002/12/mountains-rdn-jpg.webp'),
                   fit: BoxFit.cover,
                 )),
+            SizedBox(height: 35),
+            const Row(children: <Widget>[
+              SizedBox(width: 20),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Text("Oeschinen Lake Campground"),
+                  Text("Kandersteg, Switzerland", style: TextStyle(color: Color.fromARGB(255, 167, 167, 167)),)
+                ],
+              ),
+              SizedBox(width: 85),
+              Row(
+                children: <Widget>[
+                  Icon(
+                    Icons.star,
+                    color: Color.fromARGB(255, 248, 116, 28),
+                  ),
+                  Text("41"),
+                ],
+              )
+            ]),
           ],
         ),
       ),
